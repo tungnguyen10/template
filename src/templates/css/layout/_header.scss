@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+//------------------------------------------------------------------------------
+//
+//	header
+//  
+//------------------------------------------------------------------------------
+.flexbetween {
+  justify-content: space-between;
+  @extend .flex;
+}
+.flexcenter {
+  align-items: center;
+  @extend .flexbetween;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.header {
+  &_top {
+    background: #f2f2f2;
+    padding: 0.61rem 0;
+    h1 {
+      font-size: 1.3rem;
+      color: $color;
+      font-style: italic;
+    }
+    &_contact {
+      @extend .flexbetween;
+      li {
+        position: relative;
+        &:not(:last-child) {
+          &::before {
+            content: "";
+            right: -25%;
+            top: 10%;
+            bottom: 10%;
+            position: absolute;
+            border-right: 1px solid #ccc;
+          }
+        }
+        span {
+          font-weight: bold;
+        }
+        a {
+          color: $color;
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+}

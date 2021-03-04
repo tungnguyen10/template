@@ -1,7 +1,11 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    font-size: 14px;
-}
+@charset "utf-8";
+
+@import "base/_setting.scss";
+@import "base/_default.scss";
+@import "base/_base.scss";
+
+@import "layout/_header.scss";
+@import "layout/_menu.scss";
+@import "layout/_menu_mobile.scss";
+@import "layout/_footer.scss";
+@import "layout/_main.scss";

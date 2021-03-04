@@ -6,7 +6,9 @@
   "directories": {
     "test": "tests"
   },
-  "dependencies": {},
+  "dependencies": {
+    "gulp-imagemin": "^7.1.0"
+  },
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^3.9.1",
