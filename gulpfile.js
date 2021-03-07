@@ -3,6 +3,7 @@ var sass = require("gulp-sass");
 var minify = require('gulp-minify');
 var pug = require('gulp-pug');
 const imagemin = require('gulp-imagemin');
+const image = require('gulp-image');
 var browserSync = require('browser-sync').create();
 
 // listen events
@@ -42,9 +43,15 @@ gulp.task("sass", function() {
     .pipe(gulp.dest('front'))
     .pipe(browserSync.stream());
 
-    // images to images
+  //   // images to image_min
+  // gulp.src('./src/templates/images/*')
+  // .pipe(imagemin())
+  // .pipe(gulp.dest('./front/templates/images/'))
+  // .pipe(browserSync.stream());
+  
+    // img to images
   gulp.src('./src/templates/images/*')
-  .pipe(imagemin())
+  .pipe(image())
   .pipe(gulp.dest('./front/templates/images/'))
   .pipe(browserSync.stream());
 
