@@ -66,10 +66,20 @@ function scrollAnimation() {
   });
 }
 
+//init
+//---------------------------------------------------------
+$(function(){
+  userAgent();
+  userAgentIE();
+  pagetop();
+  scrollAnimation();
+});
+
+
 //menu_mobile
 //---------------------------------------------------------
 $(document).ready(function ($) {
-  $("#trigger-mobile").click(function () {
+  $(".menu-bar-mobile").click(function () {
     $(".mobile-main-menu").toggleClass("active");
     $(".backdrop__body-backdrop___1rvky").addClass("active");
   });
@@ -85,25 +95,11 @@ $(document).ready(function ($) {
     }
   });
   $(".backdrop__body-backdrop___1rvky").removeClass("active");
-  $(".ng-has-child1 a .svg1").on("click", function (e) {
-    e.preventDefault();
+  $(".ng-has-child a svg").on("click", function () {
     var $this = $(this);
-    $this.parents(".ng-has-child1").find(".ul-has-child1").stop().slideToggle();
+    $this.parent().next().slideToggle();
     $(this).toggleClass("active");
     return false;
   });
-  $(".ng-has-child1 .ul-has-child1 .ng-has-child2 a .svg2").on(
-    "click",
-    function (e) {
-      e.preventDefault();
-      var $this = $(this);
-      $this
-        .parents(".ng-has-child1 .ul-has-child1 .ng-has-child2")
-        .find(".ul-has-child2")
-        .stop()
-        .slideToggle();
-      $(this).toggleClass("active");
-      return false;
-    }
-  );
+  
 });

@@ -3,10 +3,7 @@ header.header
     .container.content_header
       .row
         .col-xl-3.col-lg-3.col-12
-          .menu-bar-mobile.menu-bar-h.nav-mobile-button
-            .menu-bar
-              a(href='#nav-mobile')
-                i.fa.fa-bars
+          .menu-bar-mobile: i.fa.fa-bars
           .logo_center
             .logo
               a.logo-wrapper(href='/')
@@ -30,25 +27,22 @@ header.header
                     .search_item.active(data-coll-id='0') Tất cả
                 input.input-group-field.st-default-search-input.search-text(type='search' name='query' value='' placeholder='Bạn cần tìm gì hôm nay... ' autocomplete='off' required='')
                 span.input-group-btn
-                  button.btn.icon-fallback-text
-                    img(src='//bizweb.dktcdn.net/100/411/753/themes/798683/assets/search.png?1607306697461' alt='Template Medicare')
+                  button.btn.icon-fallback-text: i.fas.fa-search
         .col-xl-3.col-lg-4.col-md-4
           .cartgroup
             .header-right
               .phone_header
-                .phone_image
-                  img(src='//bizweb.dktcdn.net/100/411/753/themes/798683/assets/phone_header.png?1607306697461' alt='Giỏ hàng')
+                .phone_image: i.fas.fa-mobile-alt
                 .phone_content
                   span Đặt hàng nhanh
                   a.fone(href='tel:18006750') 1800 6750
-              .top-cart-contain.f-right
-                .mini-cart.text-xs-center
-                  a.img_hover_cart(href='/cart' title='Giỏ hàng')
-                    .img-cart
-                      img(src='//bizweb.dktcdn.net/100/411/753/themes/798683/assets/icon_cart.png?1607306697461' alt='tài khoản')
-                      span.count_item.count_item_pr 0
-                    span.text Giỏ hàng
-                  .top-cart-content
+              .mini-cart
+                a.img_hover_cart(href='/cart' title='Giỏ hàng')
+                  .img-cart
+                    i.fas.fa-shopping-basket
+                    span.count_item.count_item_pr 0
+                  span.text Giỏ hàng
+                .top-cart-content
                     ul#cart-sidebar.mini-products-list.count_li
-                      .no-item
+                      li.no-item
                         p Không có sản phẩm nào.
