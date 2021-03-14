@@ -1,34 +1,34 @@
 header.header
   .mid-header
     .container.content_header
-      .row
+      .row.align-items-center
         .col-xl-3.col-lg-3.col-12
-          .menu-bar-mobile: i.fa.fa-bars
+          .menu-bar-mobile.d-lg-none: i.fa.fa-bars
           .logo_center
             .logo
               a.logo-wrapper(href='/')
-                img(src='//bizweb.dktcdn.net/100/411/753/themes/798683/assets/logo.png?1607306697461' alt='logo Template Medicare')
-          a.cart-mobile-header(href='/cart')
-            img(src='//bizweb.dktcdn.net/100/411/753/themes/798683/assets/cart_mobile.png?1607306697461' alt='tài khoản')
-            span.count_item.count_item_pr 0
+                img(src='./templates/images/logo.svg' alt='ve máy bay Thanh Tùng')
+          a.cart-mobile-header.d-lg-none(href='/cart')
+            i.fas.fa-shopping-basket
+            span.count_item 0
         .col-xl-6.col-lg-5.col-12
           .search-smart
             .header_search
               form.input-group.search-bar(action='/search' method='get' role='search')
                 .collection-selector
                   .search_text Chọn danh mục
-                  #search_info.list_search(style='display: none;')
-                    .search_item(data-coll-id='2424574' title='Thiết bị y tế') Thiết bị y tế
-                    .search_item(data-coll-id='2424566' title='Thực phẩm chức năng') Thực phẩm chức năng
-                    .search_item(data-coll-id='2424563' title='Tủ thuốc gia đình') Tủ thuốc gia đình
-                    .search_item(data-coll-id='2424561' title='Sản phẩm khuyến mại') Sản phẩm khuyến mại
-                    .search_item(data-coll-id='2424556' title='Sản phẩm nổi bật') Sản phẩm nổi bật
+                  #search_info.list_search
+                    .search_item(title='Thiết bị y tế') Thiết bị y tế
+                    .search_item(title='Thực phẩm chức năng') Thực phẩm chức năng
+                    .search_item(title='Tủ thuốc gia đình') Tủ thuốc gia đình
+                    .search_item(title='Sản phẩm khuyến mại') Sản phẩm khuyến mại
+                    .search_item(title='Sản phẩm nổi bật') Sản phẩm nổi bật
                     .liner_search
-                    .search_item.active(data-coll-id='0') Tất cả
+                    .search_item.active Tất cả
                 input.input-group-field.st-default-search-input.search-text(type='search' name='query' value='' placeholder='Bạn cần tìm gì hôm nay... ' autocomplete='off' required='')
                 span.input-group-btn
                   button.btn.icon-fallback-text: i.fas.fa-search
-        .col-xl-3.col-lg-4.col-md-4
+        .col-xl-3.col-lg-4.col-md-4.d-none.d-lg-block
           .cartgroup
             .header-right
               .phone_header

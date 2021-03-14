@@ -52,7 +52,7 @@
       
       @include hover{
         .ac_hover span {
-          color: #35c6df;
+          color: $linkColor02;
         }
         .group_ac {
           display: block;
@@ -104,7 +104,7 @@
           font-size: 1.4rem;
 
           &:hover {
-            color: #35c6df;
+            color: $linkColor02;
           }
         }
       }
@@ -121,14 +121,54 @@
 
 .mid-header {
   position: relative;
-
+  .menu-bar-mobile{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: $linkColor02;
+  }
+  .cart-mobile-header{
+    position: absolute;
+    color: $linkColor02;
+    top: 50%;
+    right: 15px  ;
+    transform: translateY(-50%);
+    font-size: 25px;
+    .count_item {
+      position: absolute;
+      top: -15px;
+      right: 3px;
+      min-width: 20px;
+      min-height: 20px;
+      padding: 0 2px;
+      border-radius: 50%;
+      background: $linkColor;
+      text-align: center;
+      line-height: 20px;
+      color: #fff;
+      font-size: 1.4rem;
+    }
+  }
+  .logo_center{
+    @include tab_md_only{
+      max-width: 50%;
+      margin: 0 auto 5%;
+    }
+    @include sp{
+      max-width: 50%;
+      margin: 0 auto 5%;
+    }
+  }
   .search-smart .header_search {
     padding: 0px 0px 0px 67px;
     display: flex;
     flex-flow: column;
     justify-content: center;
     height: 130px;
-
+    @include tab_lg{
+      padding: 0px 0px 0px 30px;
+    }
     .search-bar {
       max-width: 100%;
       width: 100%;
@@ -207,6 +247,7 @@
           padding: 0px;
           max-height: 400px;
           overflow-y: auto;
+          display: none;
 
           &::-webkit-scrollbar-track {
             border-radius: 10px;
@@ -240,7 +281,7 @@
             cursor: pointer;
 
             &:active, &:hover {
-              background-color: #066ceb;
+              background-color: $linkColor;
               color: #fff !important;
             }
           }
@@ -280,7 +321,7 @@
         margin: 0;
 
         .icon-fallback-text {
-          background: #066ceb;
+          background: $linkColor;
           cursor: pointer;
           color: #fff;
           font-size: 18px;
@@ -296,7 +337,7 @@
           border: solid 1px #ebebeb;
 
           &:hover {
-            background: #35c6df;
+            background: $linkColor02;
           }
         }
       }
@@ -320,7 +361,7 @@
         .phone_image {
           margin-right: 10px;
           i{
-            color: #066ceb;
+            color: $linkColor;
             font-size: 26px;
             vertical-align: middle;
           }
@@ -336,13 +377,13 @@
           }
 
           a {
-            color: #066ceb;
+            color: $linkColor;
             font-size: 16px;
             font-weight: 600;
             line-height: 13px;
 
             &:hover {
-              color: #35c6df;
+              color: $linkColor02;
             }
           }
         }
@@ -361,14 +402,14 @@
             position: relative;
             display: inline-block;
             i{
-              color: #066ceb;
+              color: $linkColor;
               font-size: 24px;
               vertical-align: middle;
             }
           }
 
           .count_item {
-            background: #35c6df;
+            background: $linkColor02;
             border-radius: 50%;
             width: 17px;
             height: 17px;
@@ -429,16 +470,12 @@
 
 @media (max-width: 991px) {
   .mid-header {
-    background: #066ceb;
     padding-bottom: 15px;
+    padding-top: 15px;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
-  .mid-header .search-smart .header_search {
-    padding: 0px;
-  }
-}
+
 
 @media (max-width: 991px) {
   .mid-header .search-smart .header_search {
@@ -507,7 +544,7 @@
 
 @media (max-width: 991px) {
   .mid-header .search-smart .header_search .search-bar .input-group-btn .icon-fallback-text {
-    background: #35c6df;
+    background: $linkColor02;
   }
 }
 
@@ -516,7 +553,7 @@
     height: 30px;
     line-height: 14px;
     width: 30px;
-
+    font-size: 1.4rem;
     img {
       width: 18px;
     }

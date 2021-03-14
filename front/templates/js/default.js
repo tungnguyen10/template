@@ -103,3 +103,20 @@ $(document).ready(function ($) {
   });
   
 });
+//search_text
+//---------------------------------------------------------
+$(document).ready(function() {
+  $('.search_text').click(function(){
+    $(this).next().slideToggle(200);
+    $('.list_search').show();
+  })
+  $('.list_search .search_item').on('click', function (e) {
+		$('.list_search').hide();
+		var optionSelected = $(this);
+		var title = optionSelected.text();
+		$('.search_text').text(title);
+		$(".search-text").focus();
+		optionSelected.addClass('active').siblings().removeClass('active');
+
+	});
+});
