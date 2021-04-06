@@ -10,7 +10,7 @@ footer {
 }
 .copyright{
   color: $white;
-  background: $linkColor02;
+  background: $bgColor;
   padding: 1rem 0;
   font-size: 1.3rem;
 }
@@ -24,11 +24,10 @@ footer {
   top: auto !important;
   height: 40px;
   width: 40px;
-  background-color: #000;
-  border: 2px solid #fff;
+  background-color: $bgColor;
+  border: 2px solid $bgColor;
   line-height: 36px;
   border-radius: 4px;
-  font-size: 20px;
   transition: all 0.3s ease-out 0s;
   transform: translateY(-120px);
   opacity: 0;
@@ -36,10 +35,14 @@ footer {
 
   &:hover {
     color: #fff;
-    background-color: #2196f3;
-    border-color: #0c82df;
+    background-color: $hover;
+    border-color: $hover;
   }
-
+  svg{
+    fill: #fff;
+    width: 50%;
+    height: 100%;
+  }
   &.show {
     position: fixed;
     z-index: 999;

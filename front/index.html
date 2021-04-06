@@ -28,15 +28,14 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
     <link href="./templates/css/grid.css" rel="stylesheet">
     <link href="./templates/css/style.css" rel="stylesheet">
-    <link href="./templates/css/index.css" rel="stylesheet">
   </head>
 </html>
 <body>
   <div class="tophead">
     <div class="container">
-      <div class="welcome-header">Chào mừng bạn đến với Tủ thuốc cho mọi nhà Medicare</div>
+      <div class="welcome-header">Chào mừng bạn đến với phòng vé máy bay Thanh Tùng</div>
       <div class="group_topbar">
-        <div class="time_header"><i class="far fa-clock"></i><span>Thời gian làm việc: 8:00 - 22:00</span></div>
+        <div class="time_header"><i class="far fa-clock"></i><span>Thời gian làm việc: 8:00 - 19:00</span></div>
         <div class="account">
           <div class="ac_hover"><i class="far fa-user"></i><span>Tài khoản</span></div>
           <div class="group_ac"><a class="btnx" href="/account/login">Đăng nhập</a><a href="/account/register">Đăng ký </a></div>
@@ -47,12 +46,10 @@
   <header class="header">
     <div class="mid-header">
       <div class="container content_header">
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-xl-3 col-lg-3 col-12">
-            <div class="menu-bar-mobile"><i class="fa fa-bars"></i></div>
-            <div class="logo_center">
-              <div class="logo"><a class="logo-wrapper" href="/"><img src="//bizweb.dktcdn.net/100/411/753/themes/798683/assets/logo.png?1607306697461" alt="logo Template Medicare"></a></div>
-            </div><a class="cart-mobile-header" href="/cart"><img src="//bizweb.dktcdn.net/100/411/753/themes/798683/assets/cart_mobile.png?1607306697461" alt="tài khoản"><span class="count_item count_item_pr">0</span></a>
+            <div class="menu-bar-mobile d-block d-lg-none"><i class="fa fa-bars"></i></div>
+            <div class="logo"><a class="logo-wrapper" href="/"><img src="./templates/images/logo.png" alt="vé máy bay Thanh Tùng"></a></div><a class="cart-mobile-header d-block d-lg-none" href="/cart"><i class="fas fa-shopping-basket"></i><span class="count_item">0</span></a>
           </div>
           <div class="col-xl-6 col-lg-5 col-12">
             <div class="search-smart">
@@ -76,7 +73,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-4 col-md-4">
+          <div class="col-xl-3 col-lg-4 col-md-12 d-none d-lg-block">
             <div class="cartgroup">
               <div class="header-right">
                 <div class="phone_header">
@@ -100,7 +97,7 @@
       </div>
     </div>
   </header>
-  <nav class="d-none d-md-block">
+  <nav class="d-none d-lg-block">
     <div class="container">
       <ul class="nav" id="nav">
         <li class="nav-item active"><a class="nav-link" href="#" title="menu1">menu1</a></li>
@@ -142,18 +139,14 @@
       </ul>
     </div>
   </nav>
-  <div>home</div>
+  <div style="height: 5000px;">home</div>
   <footer>
     <div class="copyright">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 text-center"><span>© Bản quyền thuộc về <b>Trung tâm Quản trị hệ thống </b><span class="s480-f">|</span> Cung cấp bởi <a href="http://laotama.com/" title="Thanh Tung" target="_blank" rel="nofollow">Thanh Tung </a></span></div>
         </div>
-        <div class="back-to-top text-center js-pagetop" title="Lên đầu trang">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px" viewBox="0 0 284.929 284.929" style="enable-background:new 0 0 284.929 284.929;" xml:space="preserve">
-            <path class="active-path" d="M282.082,195.285L149.028,62.24c-1.901-1.903-4.088-2.856-6.562-2.856s-4.665,0.953-6.567,2.856L2.856,195.285   C0.95,197.191,0,199.378,0,201.853c0,2.474,0.953,4.664,2.856,6.566l14.272,14.271c1.903,1.903,4.093,2.854,6.567,2.854   c2.474,0,4.664-0.951,6.567-2.854l112.204-112.202l112.208,112.209c1.902,1.903,4.093,2.848,6.563,2.848   c2.478,0,4.668-0.951,6.57-2.848l14.274-14.277c1.902-1.902,2.847-4.093,2.847-6.566   C284.929,199.378,283.984,197.188,282.082,195.285z" data-original="#000000" data-old_color="#000000" fill="#FFFFFF"></path>
-          </svg>
-        </div>
+        <div class="back-to-top text-center js-pagetop" title="Lên đầu trang"><svg><use xlink:href="#back-top"></use></svg></div>
       </div>
     </div>
   </footer>

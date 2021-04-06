@@ -63,7 +63,7 @@
 
 
   .ul-first-menu {
-    background-color: #2196f3;
+    background-color: $hover;
     padding: 24px 5px;
     text-align: center;
     position: relative;
@@ -101,7 +101,7 @@
 
         &:hover,
         &:focus {
-          color: #2196f3;
+          color: $hover;
           background-color: #fff;
         }
       }
@@ -116,7 +116,7 @@
     text-align: center;
     border-top: 1px solid #eaedf1;
     svg .active-path{
-      fill: $linkColor02;
+      fill: $bgColor;
     }
     img {
       width: 30px;
@@ -194,7 +194,7 @@
 
         &:hover,
         &:focus {
-          color: #2196f3;
+          color: $hover;
         }
       }
 

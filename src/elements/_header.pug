@@ -1,16 +1,15 @@
 header.header
   .mid-header
     .container.content_header
-      .row
+      .row.align-items-center
         .col-xl-3.col-lg-3.col-12
-          .menu-bar-mobile: i.fa.fa-bars
-          .logo_center
-            .logo
-              a.logo-wrapper(href='/')
-                img(src='//bizweb.dktcdn.net/100/411/753/themes/798683/assets/logo.png?1607306697461' alt='logo Template Medicare')
-          a.cart-mobile-header(href='/cart')
-            img(src='//bizweb.dktcdn.net/100/411/753/themes/798683/assets/cart_mobile.png?1607306697461' alt='tài khoản')
-            span.count_item.count_item_pr 0
+          .menu-bar-mobile.d-block.d-lg-none: i.fa.fa-bars
+          .logo
+            a.logo-wrapper(href='/')
+              img(src='./templates/images/logo.png' alt='vé máy bay Thanh Tùng')
+          a.cart-mobile-header.d-block.d-lg-none(href='/cart')
+            i.fas.fa-shopping-basket
+            span.count_item 0
         .col-xl-6.col-lg-5.col-12
           .search-smart
             .header_search
@@ -28,7 +27,7 @@ header.header
                 input.input-group-field.st-default-search-input.search-text(type='search' name='query' value='' placeholder='Bạn cần tìm gì hôm nay... ' autocomplete='off' required='')
                 span.input-group-btn
                   button.btn.icon-fallback-text: i.fas.fa-search
-        .col-xl-3.col-lg-4.col-md-4
+        .col-xl-3.col-lg-4.col-md-12.d-none.d-lg-block
           .cartgroup
             .header-right
               .phone_header

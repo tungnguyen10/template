@@ -1,5 +1,5 @@
 nav{
-  background: $linkColor02;
+  background: $bgColor;
 }
 .nav {
   position: relative;
@@ -10,7 +10,39 @@ nav{
   list-style: none;
   align-items: flex-end;
 }
-
+.menu-bar-mobile {
+  position: absolute;
+  top: 48%;
+  transform: translateY(-50%);
+  i{
+    font-size: 23px;
+    color: $bgColor;
+  }
+}
+.cart-mobile-header{
+    position: absolute;
+    z-index: 99;
+    color: $bgColor;
+    text-align: center;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 21px;
+  .count_item {
+    position: absolute;
+    font-size: 14px;
+    top: -15px;
+    right: 1px;
+    min-width: 20px;
+    min-height: 20px;
+    padding: 0 2px;
+    border-radius: 50%;
+    background: $hover;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+  }
+}
 .nav-item {
   float: left;
   position: relative;
@@ -108,7 +140,7 @@ nav{
     li {
       padding: 0;
       a {
-        padding: 1rem 1.5rem;
+        padding: 1.25rem 1.5rem;
         position: relative;
         padding-right: 20px;
         -moz-transition: all 0.2s;
